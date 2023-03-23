@@ -21,7 +21,6 @@ export default function Login() {
   const navigate = useNavigate();
 
   function loginClick(formObject) {
-    alert('this is submitted : '+formObject.username);
     if (formObject.username == "Sagar" && formObject.password == "123") {
       setUsernameGlobal("Sagar");
       navigate("/home");
@@ -83,3 +82,12 @@ export default function Login() {
 //         city:'city'
 //     }
 // }
+
+//api - reused code, web servers, and various other things.
+//react app is a client/front end application
+//application that provides data is called an back end app/server app/api application
+
+//https://apipheny.io/free-api/
+//https://catfact.ninja/fact
+//https://official-joke-api.appspot.com/random_joke
+//https://randomuser.me/api/

@@ -30,7 +30,11 @@ export default function Header() {
             <Link to={'/privacy'}>
                 <FancyButton>Privacy</FancyButton>
             </Link>
-            
+
+            <Link to={'/randomuser'}>
+                <FancyButton>User</FancyButton>
+            </Link>
+           
             <LogoutIcon/>
         </div>
     )

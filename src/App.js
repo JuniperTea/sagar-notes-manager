@@ -11,6 +11,7 @@ import ProtectedRoute from './shared/components/ProtectedRoute';
 import UserInfo from './UserInfo';
 import Toggle from './Toggle';
 import Square from './Square';
+import RandomUser from './pages/RandomUser/RandomUser';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path='/sign-up' element={<Signup />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/privacy' element={<ProtectedRoute><Privacy /></ProtectedRoute>} />
+        <Route path='/randomuser' element={<RandomUser />} />
         <Route path='/' element={<button>No path so this</button>} />
         <Route path='*' element={<button>Page Not Found</button>} />
       </Routes>

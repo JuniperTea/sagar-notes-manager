@@ -43,6 +43,10 @@ export default function Header() {
             <Link to={'/songList'}>
                 <FancyButton>List Song</FancyButton>
             </Link>
+
+            <Link to={'/jokes'}>
+                <FancyButton>Jokes</FancyButton>
+            </Link>
            
             <LogoutIcon/>
         </div>

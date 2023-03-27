@@ -11,6 +11,7 @@ import ProtectedRoute from './shared/components/ProtectedRoute';
 import RandomUser from './pages/RandomUser/RandomUser';
 import SongAdd from './pages/SongAdd/SongAdd';
 import SongList from './pages/SongList/SongList';
+import Jokes from './pages/Jokes/Jokes';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/randomuser' element={<RandomUser />} />
         <Route path='/songAdd' element={<SongAdd />} />
         <Route path='/songList' element={<SongList />} />
+        <Route path='/jokes' element={<Jokes />} />
         <Route path='/' element={<button>No path so this</button>} />
         <Route path='*' element={<button>Page Not Found</button>} />
       </Routes>

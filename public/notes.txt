@@ -46,5 +46,13 @@ store has small slices
     the Slices are the sub-containers
     one slice has "data", and some functions to modify the data.
     data is refered as STATE and functions are refered to as "REDUCERS"
-    
 
+
+
+async functions
+    when you want to initialize the data from a remote server (API)
+    into the redux, then you have to create a thunk.
+
+    thunk
+
+    

@@ -9,6 +9,8 @@ import Gallery from './pages/Gallery/Gallery';
 import Privacy from './pages/Privacy/Privacy';
 import ProtectedRoute from './shared/components/ProtectedRoute';
 import RandomUser from './pages/RandomUser/RandomUser';
+import SongAdd from './pages/SongAdd/SongAdd';
+import SongList from './pages/SongList/SongList';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/privacy' element={<ProtectedRoute><Privacy /></ProtectedRoute>} />
         <Route path='/randomuser' element={<RandomUser />} />
+        <Route path='/songAdd' element={<SongAdd />} />
+        <Route path='/songList' element={<SongList />} />
         <Route path='/' element={<button>No path so this</button>} />
         <Route path='*' element={<button>Page Not Found</button>} />
       </Routes>

@@ -12,6 +12,7 @@ export default function RandomUser() {
 
   function getData() {
     setLoading(true);
+    //This is a [GET] method as default
     fetch("https://randomuser.me/api/")
       .then(x => x.json())
       .then(response => {

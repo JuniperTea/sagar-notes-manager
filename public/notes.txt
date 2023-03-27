@@ -55,4 +55,5 @@ async functions
 
     thunk
 
-    
+
+why would we put the api in the redux?

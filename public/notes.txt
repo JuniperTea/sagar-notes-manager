@@ -1,0 +1,50 @@
+2023-03-27
+
+redux is a replacement for Global Data Context
+
+redux is a state management library
+
+why do we need global data management, to share data across components and management
+    make data available across the whole App
+
+
+when to choose between redux and GDC
+
+GDC is faster for small apps
+
+redux is made for bigger applications
+  large setup but easier for use in large applications
+
+
+redux is a predictable data container
+ main feature - unidirectional flow of data
+ only single source of information
+
+install npm i react-redux
+
+nstall npm i @reduxjs/toolkit
+
+
+create 2 components 
+    products
+        iphone  --add to cart
+        mouse   -- add to cart
+        keyboard --add to cart
+
+    cart 
+        on cart screen, increment the items in the cart
+        show 3 items in the cart 
+
+redux requires
+Store  -- the big comtainer -- a lake of data
+store has small slices
+    { productSlice,
+        orderslice,
+        userSlice,
+        cartSlice
+    }
+    the Slices are the sub-containers
+    one slice has "data", and some functions to modify the data.
+    data is refered as STATE and functions are refered to as "REDUCERS"
+    
+

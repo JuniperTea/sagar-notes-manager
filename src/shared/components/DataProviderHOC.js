@@ -20,16 +20,13 @@ function useLocalStorage(keyname) {
 // }
 
 
-
+// this is stored on the browser data store
 export default function DataProviderHOC({ children }) {
 
 
   const [username, setUsernameGlobal] = useLocalStorage('app-global-user-name')
 
-
   const [email, setEmail] = useState('Sagar@trainitsolutions.com')
-
-
 
   return (
     <UserDataContext.Provider value={{ username, email, setUsernameGlobal }}>

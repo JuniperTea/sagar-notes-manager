@@ -12,6 +12,9 @@ import RandomUser from './pages/RandomUser/RandomUser';
 import SongAdd from './pages/SongAdd/SongAdd';
 import SongList from './pages/SongList/SongList';
 import Jokes from './pages/Jokes/Jokes';
+import MyPortalForHeader from './MyPortalForHeader';
+import ClassBasedDemo from './pages/ClassBasedDemo/ClassBasedDemo';
+import ClassAndLifeCycle from './pages/ClassandLifeCycle/ClassAndLifeCycle';
 
 
 function App() {
@@ -20,6 +23,7 @@ function App() {
     <div>
 
       <Header />
+      <MyPortalForHeader value={'Apps'} />
       <hr />
       <Routes>
         <Route path='/home' element={<Home />} />
@@ -32,6 +36,8 @@ function App() {
         <Route path='/songAdd' element={<SongAdd />} />
         <Route path='/songList' element={<SongList />} />
         <Route path='/jokes' element={<Jokes />} />
+        <Route path='/classdemo' element={<ClassBasedDemo />} />
+        <Route path='/lifecycle' element={<ClassAndLifeCycle />} />
         <Route path='/' element={<button>No path so this</button>} />
         <Route path='*' element={<button>Page Not Found</button>} />
       </Routes>
@@ -39,6 +45,7 @@ function App() {
 
     </div>
   )
+
 
 }
 

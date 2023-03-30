@@ -47,6 +47,17 @@ export default function Header() {
             <Link to={'/jokes'}>
                 <FancyButton>Jokes</FancyButton>
             </Link>
+
+            
+            <Link to={'/classdemo'}>
+                <FancyButton>Class Based Demo</FancyButton>
+            </Link>
+
+            
+            
+            <Link to={'/lifecycle'}>
+                <FancyButton>Class and LifeCycle</FancyButton>
+            </Link>
            
             <LogoutIcon/>
         </div>

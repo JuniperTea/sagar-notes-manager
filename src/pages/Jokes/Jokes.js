@@ -13,12 +13,6 @@ export default function Jokes() {
     dispatch(getJoke());
   }
 
-  function delayPunchline(){
-    setTimeout(() => {
-     return jokePunchLine;
-
-    }, 1000);
-  }
 
   return (
     <div>
@@ -40,3 +34,10 @@ export default function Jokes() {
     </div>
   );
 }
+
+
+//lazy loading
+//function called lazy
+//funciton called suspense as a react component
+//fallback
+

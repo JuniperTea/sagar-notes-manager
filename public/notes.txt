@@ -57,3 +57,76 @@ async functions
 
 
 why would we put the api in the redux?
+
+
+*******************
+
+2023-03-30
+
+Lazy Loading
+    What happens when your components load slowly from your hosting server
+    entire page will stop rendering until it's entirely loaded.
+
+    javascript feature
+        promise based inputs
+
+Portals
+    how does React work.
+    react comes with only 1 html file.  (index.html)
+    all the componets get transoformed and imported into a single <div> statement on the index.html
+    you cannot access the react application w/in an index.html page unless you use a Portals
+    so you need to create a componet MyPortalForHeader.js with a document.getElementByID  information.
+    then call it in App.js
+    on html, give an id to the div you want it injected into.
+    you cannot inject from index.html into the react environment.
+
+    you can create portals with props
+
+Class Based components  
+    a javascript class that extends from component class
+    must have a render portion that returns only JSX
+
+    create a file -> call rcc emmet to create the framework
+    you need constructor() and a super()
+    all props called in this component start with this.props.
+
+
+    state is a variable within all class based component.  access through this.state
+    in class based funciton, you need arrow based funcitons
+    inside a normal function a "this" call will be undefined.  
+    "this" points to the "calling context"
+
+    this.Increment.bind('laura')  binding the call, then the bind value will be passed into the function.
+    on every function there is a bind function and can change the context for the funciton call.
+
+    when inside an arrow function, the "this" will only point to the instance where it was declared.
+
+    to change state in the cbc, you need to change setState.  and call this.state.variable +1 etc
+
+    setState works like a patch, it only changes the state you pass into it.
+
+    you use the forceUpdate() funciton when your varialbles are outside the state function, and you need to rerender the unidirectional
+
+    useEffect() - does something on page load, 
+
+    prior to useEffect and hooks,  we had "lifecycle" methods
+
+        we use     componentDidMount(){}  to run when the component gets called
+        when compoeont is updated, we can implement componentDidUpdate
+        componentWillUnmount is called right before destruction.  it get's destroyed when the parent compoent conditionally renders it.
+
+
+
+error boundary
+
+    it is required that it be created via a class based component
+    follow this. link
+    https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary
+
+
+
+
+
+    
+
+    
